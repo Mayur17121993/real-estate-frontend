@@ -1,8 +1,8 @@
 {
   "name": "myapp",
+  "homepage": "https://Mayur17121993.github.io/real-estate-frontend",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://realestatebackend-d7m4.onrender.com",
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
@@ -13,6 +13,8 @@
     "axios": "^1.2.0",
     "bootstrap": "^5.2.3",
     "formik": "^2.2.9",
+    "gh-pages": "^5.0.0",
+    "http-proxy-middleware": "^2.0.6",
     "json-server": "^0.17.0",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
@@ -27,6 +29,8 @@
     "yup": "^0.32.11"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
